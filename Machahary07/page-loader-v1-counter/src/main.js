@@ -14,7 +14,7 @@ document.body.appendChild(logoContainer)
 
 const sourceLink = document.createElement('a')
 sourceLink.className = 'source-link underline-hover'
-sourceLink.href = 'https://github.com/IntellarisStudio/PRYourTemplates'
+sourceLink.href = 'https://github.com/IntellarisStudio/PRYourTemplates/tree/main/Machahary07/page-loader-v1-counter'
 sourceLink.target = '_blank'
 sourceLink.textContent = 'Source-Code'
 document.body.appendChild(sourceLink)
