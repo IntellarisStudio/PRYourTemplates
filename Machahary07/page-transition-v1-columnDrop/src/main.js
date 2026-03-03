@@ -11,7 +11,7 @@ document.body.appendChild(logoContainer)
 
 const sourceLink = document.createElement('a')
 sourceLink.className = 'source-link'
-sourceLink.href = 'https://github.com/IntellarisStudio/PRYourTemplates/tree/main/Machahary07/page-transition-v1-columnDrop'
+sourceLink.href = 'https://codepen.io/IntellarisStudio/pen/KwgPvyw'
 sourceLink.target = '_blank'
 sourceLink.textContent = 'Source-Code'
 document.body.appendChild(sourceLink)
@@ -80,8 +80,12 @@ const pages = {
 function renderPage(pageKey) {
   app.innerHTML = pages[pageKey].content
   
-  // Re-attach event listeners
+  // Re-attach event listeners and set active state
   app.querySelectorAll('[data-page]').forEach(link => {
+    if (link.getAttribute('data-page') === pageKey) {
+      link.classList.add('active')
+    }
+
     link.addEventListener('click', (e) => {
       const targetPage = e.target.getAttribute('data-page')
       navigateTo(targetPage)

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Transition V1 - Column Drop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Persistent UI Elements -->
+    <div class="logo-container">
+        <img src="https://jhzcxtuowqnaurrkzcus.supabase.co/storage/v1/object/public/Assets/Intellaris_Studio_Main_Logo_White.svg" alt="Studio Logo">
+    </div>
+
+    <!-- Source and Demo Links (Position handled via CSS) -->
+    <a href="https://codepen.io/IntellarisStudio/pen/KwgPvyw" class="source-link" target="_blank">Source-Code</a>
+    <a href="https://istudio-page-transition-v1-columnDrop.netlify.app" class="demo-link" target="_blank">Live-Demo</a>
+    
+    <div class="copyright">© 2026 Intellaris Pvt. Ltd.</div>
+
+    <!-- Transition Overlay -->
+    <div id="transition-container">
+        <div class="transition-column"></div>
+        <div class="transition-column"></div>
+        <div class="transition-column"></div>
+        <div class="transition-column"></div>
+        <div class="transition-column"></div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="app">
+        <!-- Content will be injected here via script.js -->
+    </div>
+
+    <!-- GSAP for smooth animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
