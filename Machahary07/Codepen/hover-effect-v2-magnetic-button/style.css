@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    overflow: hidden;
+}
+
+.magnetic-container {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.magnetic-button {
+    width: 160px;
+    height: 160px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.magnetic-button span {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    pointer-events: none;
+    position: relative;
+    z-index: 1;
+    display: inline-block; /* Essential for GSAP transforms */
+}
+
+.magnetic-button:hover {
+    background-color: #1a1a1a;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
